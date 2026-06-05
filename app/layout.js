@@ -24,10 +24,12 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
+        <div className="topbanner" aria-hidden="true" />
+
         <header className="header">
           <div className="header-content">
-            <Link href="/" className="logo" onClick={close}>
-              UW Giant Cell Arteritis Fast Track Clinic
+            <Link href="/" className="logo" onClick={close} aria-label="Home">
+              <img src="/icon.svg" alt="" className="logo-icon" width="36" height="36" />
             </Link>
 
             <button
