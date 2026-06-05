@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Patient Resources | UW Giant Cell Arteritis Fast Track Clinic',
-  description: 'Trusted resources for patients with giant cell arteritis (GCA): the Vasculitis Foundation, plain-language education, treatment and bone-health information, financial assistance, questions to ask your doctor, and a glossary.',
+  description: 'Trusted resources for patients with giant cell arteritis (GCA): the Vasculitis Foundation, plain-language education, medications and bone-health information, financial assistance, questions to ask your doctor, and a glossary.',
 };
 
 const trusted = [
@@ -19,7 +19,9 @@ const glossary = [
   { term: 'AION', def: 'Anterior ischemic optic neuropathy — the main cause of GCA-related vision loss.' },
   { term: 'Polymyalgia rheumatica (PMR)', def: 'A related condition causing shoulder and hip stiffness, especially in the morning.' },
   { term: 'Corticosteroids (prednisone)', def: 'The main initial treatment, used to calm the inflammation quickly.' },
-  { term: 'Tocilizumab', def: 'A steroid-sparing biologic medicine used to help control GCA.' },
+  { term: 'Tocilizumab (Actemra)', def: 'A steroid-sparing biologic medicine (an IL-6 inhibitor) given by injection to help control GCA.' },
+  { term: 'Upadacitinib (Rinvoq)', def: 'An oral JAK-inhibitor medicine, FDA-approved for GCA in 2025, used to help control the disease and reduce steroids.' },
+  { term: 'JAK inhibitor', def: 'A type of medicine taken by mouth that lowers immune-system activity; upadacitinib is one example.' },
   { term: 'Flare', def: 'A return of disease activity after improvement.' },
 ];
 
@@ -73,6 +75,41 @@ export default function Resources() {
       </section>
 
       <section className="section">
+        <h2 className="section-title">Medications for GCA</h2>
+        <p>
+          Treatment usually begins with corticosteroids (such as prednisone) to calm inflammation quickly
+          and protect vision. Many patients also take a steroid-sparing medicine to control the disease and
+          lower the total amount of steroids needed. Two medicines are FDA-approved specifically for GCA:
+        </p>
+        <ul className="fact-list" style={{ marginTop: '1.25rem' }}>
+          <li>
+            <strong>Tocilizumab (Actemra)</strong>
+            <div style={{ marginTop: '0.25rem' }}>An interleukin-6 (IL-6) inhibitor given by injection. It can help control GCA and reduce steroid exposure.</div>
+          </li>
+          <li>
+            <a href="https://www.rinvoq.com/" target="_blank" rel="noopener noreferrer"><strong>Upadacitinib (Rinvoq)</strong></a>
+            <div style={{ marginTop: '0.25rem' }}>An oral JAK inhibitor, FDA-approved for GCA in 2025 based on the SELECT-GCA trial.</div>
+          </li>
+        </ul>
+        <div className="callout callout-info" style={{ marginTop: '1.5rem' }}>
+          <span className="callout-icon" aria-hidden="true">&#8505;&#65039;</span>
+          <div>
+            <p className="callout-title">A note about JAK inhibitors (like upadacitinib)</p>
+            <p>
+              JAK inhibitors carry the FDA&rsquo;s strongest (&ldquo;boxed&rdquo;) warning for serious
+              infections, blood clots, certain cancers, and major cardiovascular events such as heart attack
+              and stroke, as well as a higher risk of death. These risks come largely from a study of a
+              different JAK inhibitor in people with rheumatoid arthritis who had heart-disease risk factors;
+              in the giant cell arteritis trial, these cardiovascular events were not seen, but the warnings
+              still apply to this class of medicines. Your rheumatologist will weigh these risks with you,
+              especially if you have heart-disease risk factors, a history of blood clots or cancer, or you
+              smoke. <a href="https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-warnings-about-increased-risk-serious-heart-related-events-cancer-blood-clots-and-death" target="_blank" rel="noopener noreferrer">Read the FDA&rsquo;s JAK-inhibitor warning</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <h2 className="section-title">Living with treatment: steroids &amp; bone health</h2>
         <p>
           GCA is usually treated with corticosteroids (such as prednisone), sometimes for many months. Over
@@ -91,9 +128,9 @@ export default function Resources() {
       <section className="section">
         <h2 className="section-title">Help paying for medication</h2>
         <p>
-          If you are prescribed tocilizumab and are worried about cost, the manufacturer runs programs that
-          may help with out-of-pocket expenses or provide the medicine at no cost for those who qualify.
-          These are listed for your convenience and are not an endorsement &mdash; your care team and
+          If you are prescribed tocilizumab or upadacitinib and are worried about cost, the manufacturers run
+          programs that may help with out-of-pocket expenses or provide the medicine at no cost for those who
+          qualify. These are listed for your convenience and are not an endorsement &mdash; your care team and
           insurance plan can help you find the best option.
         </p>
         <ul className="fact-list" style={{ marginTop: '1.25rem' }}>
@@ -101,19 +138,33 @@ export default function Resources() {
             <a href="https://www.genentech-access.com/patient/brands/actemra.html" target="_blank" rel="noopener noreferrer"><strong>Tocilizumab (Actemra) Access Solutions</strong></a>
             <div style={{ marginTop: '0.25rem' }}>Patient support for coverage, co-pay assistance, and the Genentech Patient Foundation (free medicine for those who qualify).</div>
           </li>
+          <li>
+            <a href="https://www.rinvoq.com/resources/rinvoq-complete" target="_blank" rel="noopener noreferrer"><strong>Upadacitinib (Rinvoq) Complete</strong></a>
+            <div style={{ marginTop: '0.25rem' }}>Co-pay savings for eligible commercially insured patients, plus myAbbVie Assist for those without coverage who qualify.</div>
+          </li>
         </ul>
       </section>
 
       <section className="section">
         <h2 className="section-title">Questions to ask your doctor</h2>
+
+        <h3 className="subsection-title">If you&rsquo;re being evaluated for GCA</h3>
         <ul style={{ paddingLeft: '1.2rem', lineHeight: 1.9 }}>
           <li>Could my symptoms be giant cell arteritis?</li>
           <li>Do I need treatment right away to protect my vision?</li>
           <li>What tests will I need &mdash; blood tests, vascular ultrasound, or a biopsy?</li>
+          <li>If a test is negative, could I still have GCA?</li>
+          <li>What should I do if I notice vision changes while we are sorting this out?</li>
+        </ul>
+
+        <h3 className="subsection-title" style={{ marginTop: '1.75rem' }}>If you&rsquo;ve been diagnosed with GCA</h3>
+        <ul style={{ paddingLeft: '1.2rem', lineHeight: 1.9 }}>
           <li>What are the side effects of steroids, and how will we protect my bones?</li>
-          <li>Is a steroid-sparing medicine like tocilizumab right for me?</li>
+          <li>Is a steroid-sparing medicine (such as tocilizumab or upadacitinib) right for me?</li>
+          <li>What are the risks and benefits of each treatment option?</li>
           <li>How long will I be on treatment, and how will we lower the steroids over time?</li>
           <li>What signs mean my disease might be flaring?</li>
+          <li>Do I need monitoring for medication side effects, such as lab tests, infection risk, or heart-disease risk?</li>
           <li>What should I do if I notice any vision changes?</li>
         </ul>
       </section>
