@@ -2,6 +2,7 @@ export default function About() {
   return (
     <main className="main">
       <h1 className="page-title">About Us</h1>
+      <p className="page-intro">Meet the physicians caring for patients with giant cell arteritis at the UW Fast Track Clinic.</p>
 
       <div className="team-grid">
         <div className="team-member">
@@ -20,8 +21,8 @@ export default function About() {
             Dr. Sacksen obtained her medical degree at Dartmouth Medical School, Hanover, NH (1991) and completed
             internal medicine residency at the University of Washington, Seattle, WA (1991-1994) and rheumatology
             fellowship at the University of Washington, Seattle, WA (2011-2013). Her primary clinical site is Roosevelt
-            Clinic where she is the section head. She is certified in MSK Ultrasound, co-runs the ultrasound program
-            for rheumatology fellows, and coordinates the yearly vascular ultrasound conference.
+            Clinic where she is the section head. She is certified in MSK Ultrasound and co-runs the ultrasound program
+            for rheumatology fellows.
           </p>
         </div>
 
@@ -30,9 +31,8 @@ export default function About() {
           <p>
             Dr. Pollock attended the University of California Los Angeles, Los Angeles, CA (1971). He completed his
             residency at the University of Washington, Seattle, WA (1975-1978) and rheumatology fellowship at the
-            University of Washington, Seattle, WA (1978-1980). He is certified in MSK Ultrasound, co-runs the
-            fellowship ultrasound program for rheumatology fellows, and coordinates the yearly vascular ultrasound
-            conference.
+            University of Washington, Seattle, WA (1978-1980). He is certified in MSK Ultrasound and co-runs the
+            fellowship ultrasound program for rheumatology fellows.
           </p>
         </div>
       </div>
