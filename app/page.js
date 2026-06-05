@@ -21,12 +21,12 @@ function Icon({ name }) {
 }
 
 const cards = [
-  { href: '/about-gca', icon: 'book', gold: false, title: 'About GCA', text: 'What giant cell arteritis is, the warning signs, and why fast diagnosis matters.' },
-  { href: '/fast-track-clinic', icon: 'clipboard', gold: true, title: 'Fast Track Clinic', text: 'How rheumatologists and providers refer a patient for urgent evaluation.' },
-  { href: '/vascular-ultrasound', icon: 'activity', gold: false, title: 'Vascular Ultrasound', text: 'How we use ultrasound to diagnose and monitor GCA.' },
-  { href: '/research', icon: 'document', gold: true, title: 'Research & Publications', text: 'Our published GCA studies, with plain-language summaries.' },
-  { href: '/faqs', icon: 'help', gold: false, title: 'FAQs', text: 'Common questions from patients and providers.' },
-  { href: '/about', icon: 'users', gold: true, title: 'About Us', text: 'Meet the physicians behind the Fast Track Clinic.' },
+  { href: '/about-gca', icon: 'book', tint: 'sage', title: 'About GCA', text: 'What giant cell arteritis is, the warning signs, and why fast diagnosis matters.' },
+  { href: '/fast-track-clinic', icon: 'clipboard', tint: 'lavender', title: 'Fast Track Clinic', text: 'How rheumatologists and providers refer a patient for urgent evaluation.' },
+  { href: '/vascular-ultrasound', icon: 'activity', tint: 'lagoon', title: 'Vascular Ultrasound', text: 'How we use ultrasound to diagnose and monitor GCA.' },
+  { href: '/research', icon: 'document', tint: 'pink', title: 'Research & Publications', text: 'Our published GCA studies, with plain-language summaries.' },
+  { href: '/faqs', icon: 'help', tint: 'sage', title: 'FAQs', text: 'Common questions from patients and providers.' },
+  { href: '/about', icon: 'users', tint: 'lavender', title: 'About Us', text: 'Meet the physicians behind the Fast Track Clinic.' },
 ];
 
 export default function Home() {
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="link-card-grid">
           {cards.map((c) => (
             <Link key={c.href} href={c.href} className="link-card">
-              <div className={`icon-circle ${c.gold ? 'gold' : ''}`}><Icon name={c.icon} /></div>
+              <div className={`icon-circle ${c.tint}`}><Icon name={c.icon} /></div>
               <h3>{c.title}</h3>
               <p>{c.text}</p>
               <div className="arrow">Learn more &rarr;</div>
