@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
 :root {
     --ocean: #114e5b;
     --lagoon: #2b7d8c;
@@ -22,6 +24,8 @@
     --shadow-md: 0 6px 20px rgba(17, 78, 91, 0.10);
     --radius: 16px;
     --focus: 3px solid #2b7d8c;
+    --font-serif: 'EB Garamond', Garamond, 'Times New Roman', serif;
+    --font-sans: 'Carlito', Calibri, 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -38,10 +42,17 @@ html,
 body {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: var(--font-sans);
     background: var(--bg);
     color: var(--ink);
     line-height: 1.7;
+}
+
+h1, h2, h3,
+.hero h1, .page-title, .section-title, .subsection-title,
+.card-title, .link-card h3, .team-member h3, .team-member h3 a,
+.faq-question, .pub-title {
+    font-family: var(--font-serif);
 }
 
 a {
@@ -60,33 +71,37 @@ button:focus-visible {
     border-radius: 4px;
 }
 
+/* Cherry blossom banner */
+.topbanner {
+    width: 100%;
+    height: 150px;
+    background: url('/cherry-blossom.svg') center bottom / cover no-repeat;
+}
+
 /* Header */
 .header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: saturate(180%) blur(8px);
     border-bottom: 1px solid var(--border-color);
-    padding: 0.9rem 2rem;
+    padding: 0.75rem 2rem;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
 .header-content {
-    max-width: 1100px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .logo {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    color: var(--ocean);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    line-height: 1.3;
+    flex-shrink: 0;
 }
 
 .logo:hover {
@@ -94,16 +109,27 @@ button:focus-visible {
     opacity: 0.85;
 }
 
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    display: block;
+    border-radius: 8px;
+}
+
 .nav {
+    flex: 1;
     display: flex;
-    gap: 1.3rem;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
 }
 
 .nav a {
     color: var(--ink-soft);
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: 700;
+    white-space: nowrap;
     padding: 0.35rem 0;
     border-bottom: 2px solid transparent;
 }
@@ -125,9 +151,10 @@ button:focus-visible {
     cursor: pointer;
     color: var(--ocean);
     padding: 0.5rem;
+    margin-left: auto;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 980px) {
     .nav { display: none; }
     .mobile-menu-btn { display: block; }
     .nav.open {
@@ -164,9 +191,9 @@ button:focus-visible {
 }
 
 .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
 }
 
@@ -242,8 +269,8 @@ button:focus-visible {
 }
 
 .page-title {
-    font-size: 1.95rem;
-    font-weight: 700;
+    font-size: 2.1rem;
+    font-weight: 600;
     color: var(--ocean);
     margin-bottom: 0.5rem;
 }
@@ -260,17 +287,17 @@ button:focus-visible {
 }
 
 .section-title {
-    font-size: 1.45rem;
+    font-size: 1.6rem;
     color: var(--ocean);
     margin-bottom: 1.25rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .subsection-title {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     color: var(--ink);
     margin-bottom: 0.9rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* Link cards (home) */
@@ -317,7 +344,7 @@ button:focus-visible {
 .icon-circle.pink { background: var(--pink-tint); color: var(--pink-deep); }
 
 .link-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     color: var(--ocean);
     margin-bottom: 0.4rem;
 }
@@ -352,8 +379,8 @@ button:focus-visible {
 }
 
 .card-title {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 600;
     margin-bottom: 1rem;
     color: var(--ocean);
 }
@@ -467,8 +494,8 @@ button:focus-visible {
 }
 
 .pub-title {
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: var(--ink);
     margin-bottom: 0.3rem;
     line-height: 1.4;
@@ -522,7 +549,7 @@ button:focus-visible {
 }
 
 .team-member h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: var(--ocean);
 }
@@ -553,8 +580,8 @@ button:focus-visible {
 }
 
 .faq-question {
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: var(--ocean);
     margin-bottom: 0.5rem;
 }
@@ -581,12 +608,13 @@ button:focus-visible {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .topbanner { height: 96px; }
     .hero { padding: 3rem 1.5rem; }
-    .hero h1 { font-size: 1.85rem; }
+    .hero h1 { font-size: 2rem; }
     .hero p { font-size: 1.08rem; }
     .main { padding: 2rem 1.25rem 3rem; }
     .card-grid { grid-template-columns: 1fr; }
-    .page-title { font-size: 1.6rem; }
+    .page-title { font-size: 1.7rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
