@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
             <nav className={`nav ${menuOpen ? 'open' : ''}`}>
               <Link href="/" onClick={close} className={isActive('/') ? 'active' : ''}>Home</Link>
               <Link href="/about-gca" onClick={close} className={isActive('/about-gca') ? 'active' : ''}>About GCA</Link>
+              <Link href="/resources" onClick={close} className={isActive('/resources') ? 'active' : ''}>Resources</Link>
               <Link href="/fast-track-clinic" onClick={close} className={isActive('/fast-track-clinic') ? 'active' : ''}>Fast Track Clinic</Link>
               <Link href="/vascular-ultrasound" onClick={close} className={isActive('/vascular-ultrasound') ? 'active' : ''}>Vascular Ultrasound</Link>
               <Link href="/research" onClick={close} className={isActive('/research') ? 'active' : ''}>Research</Link>
