@@ -1,22 +1,27 @@
 :root {
-    --uw-purple: #4b2e83;
-    --uw-purple-light: #6b4fa2;
-    --plum-soft: #f3effa;
-    --gold: #b7a57a;
-    --gold-soft: #f7f2e7;
-    --gold-text: #7a672f;
-    --cream: #fbf9f5;
-    --text-primary: #2a272f;
-    --text-secondary: #4f4c57;
-    --border-color: #e7e2ee;
-    --background: #ffffff;
-    --link-color: #5535a6;
+    --ocean: #114e5b;
+    --lagoon: #2b7d8c;
+    --link: #1c6170;
+    --rose: #9e4f63;
+    --rose-hover: #854153;
+    --ink: #20292b;
+    --ink-soft: #46565a;
+    --bg: #f7f9f8;
+    --surface: #ffffff;
+    --border-color: #e3eae6;
+    --sage-tint: #e8f1ea;
+    --sage-deep: #3f6e4f;
+    --lavender-tint: #f0edf7;
+    --lavender-deep: #5e4f87;
+    --pink-tint: #f6eaed;
+    --pink-deep: #8f4f5b;
+    --lagoon-tint: #e3f0f2;
     --danger: #b42318;
     --danger-bg: #fdecea;
-    --shadow-sm: 0 1px 2px rgba(45, 42, 50, 0.06);
-    --shadow-md: 0 6px 20px rgba(75, 46, 131, 0.10);
+    --shadow-sm: 0 1px 2px rgba(17, 78, 91, 0.06);
+    --shadow-md: 0 6px 20px rgba(17, 78, 91, 0.10);
     --radius: 16px;
-    --focus: 3px solid #6b4fa2;
+    --focus: 3px solid #2b7d8c;
 }
 
 * {
@@ -34,13 +39,13 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: var(--cream);
-    color: var(--text-primary);
+    background: var(--bg);
+    color: var(--ink);
     line-height: 1.7;
 }
 
 a {
-    color: var(--link-color);
+    color: var(--link);
     text-decoration: none;
 }
 
@@ -79,7 +84,7 @@ button:focus-visible {
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.01em;
-    color: var(--uw-purple);
+    color: var(--ocean);
     text-decoration: none;
     line-height: 1.3;
 }
@@ -96,7 +101,7 @@ button:focus-visible {
 }
 
 .nav a {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     font-size: 1rem;
     font-weight: 500;
     padding: 0.35rem 0;
@@ -104,13 +109,13 @@ button:focus-visible {
 }
 
 .nav a:hover {
-    color: var(--uw-purple);
+    color: var(--ocean);
     text-decoration: none;
 }
 
 .nav a.active {
-    color: var(--uw-purple);
-    border-bottom-color: var(--gold);
+    color: var(--ocean);
+    border-bottom-color: var(--lagoon);
 }
 
 .mobile-menu-btn {
@@ -118,7 +123,7 @@ button:focus-visible {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--uw-purple);
+    color: var(--ocean);
     padding: 0.5rem;
 }
 
@@ -132,7 +137,7 @@ button:focus-visible {
           top: 100%;
           left: 0;
           right: 0;
-          background: var(--background);
+          background: var(--surface);
           padding: 1rem 2rem;
           border-bottom: 1px solid var(--border-color);
           gap: 0.5rem;
@@ -145,7 +150,7 @@ button:focus-visible {
 
 /* Hero */
 .hero {
-    background: linear-gradient(135deg, var(--uw-purple) 0%, var(--uw-purple-light) 60%, #8b6fc4 100%);
+    background: linear-gradient(135deg, #114e5b 0%, #1d6573 55%, #2b7d8c 100%);
     color: white;
     padding: 4.5rem 2rem 4rem;
     text-align: center;
@@ -167,7 +172,7 @@ button:focus-visible {
 
 .hero p {
     font-size: 1.2rem;
-    opacity: 0.96;
+    opacity: 0.97;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -183,8 +188,8 @@ button:focus-visible {
 /* Buttons */
 .referral-button {
     display: inline-block;
-    background: var(--gold);
-    color: #2f2710;
+    background: var(--rose);
+    color: #ffffff;
     padding: 0.85rem 1.75rem;
     border-radius: 999px;
     font-weight: 700;
@@ -195,8 +200,8 @@ button:focus-visible {
 }
 
 .referral-button:hover {
-    background: #a8956a;
-    color: #2f2710;
+    background: var(--rose-hover);
+    color: #ffffff;
     text-decoration: none;
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
@@ -230,7 +235,7 @@ button:focus-visible {
 
 .lead {
     font-size: 1.2rem;
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     max-width: 760px;
     margin: 0 auto 2.5rem;
     text-align: center;
@@ -239,12 +244,12 @@ button:focus-visible {
 .page-title {
     font-size: 1.95rem;
     font-weight: 700;
-    color: var(--uw-purple);
+    color: var(--ocean);
     margin-bottom: 0.5rem;
 }
 
 .page-intro {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
     max-width: 740px;
@@ -256,14 +261,14 @@ button:focus-visible {
 
 .section-title {
     font-size: 1.45rem;
-    color: var(--uw-purple);
+    color: var(--ocean);
     margin-bottom: 1.25rem;
     font-weight: 700;
 }
 
 .subsection-title {
     font-size: 1.15rem;
-    color: var(--text-primary);
+    color: var(--ink);
     margin-bottom: 0.9rem;
     font-weight: 700;
 }
@@ -278,12 +283,12 @@ button:focus-visible {
 
 .link-card {
     display: block;
-    background: var(--background);
+    background: var(--surface);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.75rem;
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--ink);
     box-shadow: var(--shadow-sm);
     transition: transform 0.14s ease, box-shadow 0.14s ease;
 }
@@ -298,34 +303,34 @@ button:focus-visible {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: var(--plum-soft);
-    color: var(--uw-purple);
+    background: var(--lagoon-tint);
+    color: var(--link);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.icon-circle.gold {
-    background: var(--gold-soft);
-    color: var(--gold-text);
-}
+.icon-circle.sage { background: var(--sage-tint); color: var(--sage-deep); }
+.icon-circle.lavender { background: var(--lavender-tint); color: var(--lavender-deep); }
+.icon-circle.lagoon { background: var(--lagoon-tint); color: var(--link); }
+.icon-circle.pink { background: var(--pink-tint); color: var(--pink-deep); }
 
 .link-card h3 {
     font-size: 1.2rem;
-    color: var(--uw-purple);
+    color: var(--ocean);
     margin-bottom: 0.4rem;
 }
 
 .link-card p {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     font-size: 1rem;
     margin: 0;
 }
 
 .link-card .arrow {
     margin-top: 0.9rem;
-    color: var(--uw-purple);
+    color: var(--link);
     font-weight: 700;
     font-size: 1rem;
 }
@@ -339,7 +344,7 @@ button:focus-visible {
 }
 
 .card {
-    background: var(--background);
+    background: var(--surface);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 2rem;
@@ -350,19 +355,19 @@ button:focus-visible {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--uw-purple);
+    color: var(--ocean);
 }
 
 .card p {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     font-size: 1.02rem;
     line-height: 1.7;
 }
 
 .card-note {
     font-weight: 700;
-    color: var(--uw-purple);
-    background: var(--plum-soft);
+    color: var(--ocean);
+    background: var(--lavender-tint);
     padding: 0.75rem 1rem;
     border-radius: 10px;
 }
@@ -397,17 +402,17 @@ button:focus-visible {
 }
 
 .callout p {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     margin: 0;
 }
 
 .callout-info {
-    background: var(--plum-soft);
-    border: 1px solid #ddd2ef;
+    background: var(--lagoon-tint);
+    border: 1px solid #c9e1e6;
 }
 
 .callout-info .callout-title {
-    color: var(--uw-purple);
+    color: var(--ocean);
 }
 
 /* Symptom / fact list */
@@ -421,17 +426,17 @@ button:focus-visible {
 }
 
 .fact-list li {
-    background: var(--background);
+    background: var(--surface);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 0.95rem 1.1rem;
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     box-shadow: var(--shadow-sm);
     font-size: 1.02rem;
 }
 
 .fact-list li strong {
-    color: var(--text-primary);
+    color: var(--ink);
 }
 
 /* Publications */
@@ -442,9 +447,9 @@ button:focus-visible {
 }
 
 .pub-card {
-    background: var(--background);
+    background: var(--surface);
     border: 1px solid var(--border-color);
-    border-left: 5px solid var(--gold);
+    border-left: 5px solid var(--lagoon);
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: var(--shadow-sm);
@@ -452,8 +457,8 @@ button:focus-visible {
 
 .pub-year {
     display: inline-block;
-    background: var(--plum-soft);
-    color: var(--uw-purple);
+    background: var(--lavender-tint);
+    color: var(--ocean);
     font-weight: 700;
     font-size: 0.85rem;
     padding: 0.2rem 0.7rem;
@@ -464,20 +469,20 @@ button:focus-visible {
 .pub-title {
     font-size: 1.15rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--ink);
     margin-bottom: 0.3rem;
     line-height: 1.4;
 }
 
 .pub-journal {
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     font-style: italic;
     margin-bottom: 0.7rem;
 }
 
 .pub-summary {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     margin-bottom: 0.8rem;
     font-size: 1.02rem;
 }
@@ -489,12 +494,12 @@ button:focus-visible {
 
 .publication-category {
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--ink);
     margin-bottom: 0.75rem;
 }
 
 .publication {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     font-size: 0.95rem;
     margin-bottom: 1rem;
     line-height: 1.6;
@@ -509,7 +514,7 @@ button:focus-visible {
 }
 
 .team-member {
-    background: var(--background);
+    background: var(--surface);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.75rem;
@@ -519,18 +524,27 @@ button:focus-visible {
 .team-member h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--uw-purple);
+    color: var(--ocean);
+}
+
+.team-member h3 a {
+    color: var(--ocean);
+    text-decoration: none;
+}
+
+.team-member h3 a:hover {
+    text-decoration: underline;
 }
 
 .team-member p {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     font-size: 1rem;
     line-height: 1.7;
 }
 
 /* FAQ */
 .faq-item {
-    background: var(--background);
+    background: var(--surface);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
@@ -541,26 +555,26 @@ button:focus-visible {
 .faq-question {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--uw-purple);
+    color: var(--ocean);
     margin-bottom: 0.5rem;
 }
 
 .faq-answer {
-    color: var(--text-secondary);
+    color: var(--ink-soft);
     line-height: 1.75;
     font-size: 1.02rem;
 }
 
 /* Footer */
 .footer {
-    background: var(--uw-purple);
-    color: #efeaf7;
+    background: var(--ocean);
+    color: #dcebed;
     padding: 2.5rem 2rem;
     text-align: center;
 }
 
 .footer p {
-    color: #efeaf7;
+    color: #dcebed;
     font-size: 0.95rem;
     opacity: 0.95;
 }
