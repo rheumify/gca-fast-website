@@ -10,10 +10,8 @@ export default function VascularUltrasound() {
           guidelines, it is not yet currently recommended in the ACR guidelines due to lack of experience of
           rheumatologists with vascular ultrasound. The University of Washington has pioneered the introduction of
           vascular ultrasound for diagnosis and monitoring of GCA, starting in 2017. Now over 400 vascular ultrasound
-          exams have been performed. Please review the guidelines and literature below.
-        </p>
-        <p style={{ marginTop: '1rem' }}>
-          The University of Washington holds the only North American based conference on vascular ultrasound for GCA.
+          exams have been performed. Please review the guidelines and literature below. The University of Washington
+          holds the only North American based conference on vascular ultrasound for GCA.
         </p>
       </section>
 
@@ -21,13 +19,24 @@ export default function VascularUltrasound() {
         <h2 className="subsection-title">Clinical Practice Guidelines for GCA</h2>
         <ul style={{ listStyle: 'none', padding: 0 }}>
           <li style={{ marginBottom: '0.5rem' }}>
-            <a href="https://www.rheumatology.org/Practice-Quality/Clinical-Support/Clinical-Practice-Guidelines/Giant-Cell-Arteritis" target="_blank" rel="noopener noreferrer">
+            <a href="https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt2da0b446917ba8b8/6331df5f2b80434a8b6920e3/giant-cell-arteritis-takayasu-arteritis-guideline-2021.pdf" target="_blank" rel="noopener noreferrer">
               American College of Rheumatology
             </a>
           </li>
           <li>
-            <a href="https://ard.bmj.com/content/77/5/636" target="_blank" rel="noopener noreferrer">
+            <a href="https://ard.bmj.com/content/79/1/19" target="_blank" rel="noopener noreferrer">
               EULAR
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section className="section">
+        <h2 className="subsection-title">Yearly Vascular Ultrasound Conference</h2>
+        <ul style={{ listStyle: 'none', padding: 0 }}>
+          <li>
+            <a href="https://uw.cloud-cme.com/course/courseoverview?P=5&EID=8540" target="_blank" rel="noopener noreferrer">
+              University of Washington 2023 conference (July 28&ndash;30, 2023)
             </a>
           </li>
         </ul>
