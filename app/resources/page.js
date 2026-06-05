@@ -178,6 +178,16 @@ export default function Resources() {
           The exam typically takes under an hour. Your care team will give you any specific instructions
           before your visit.
         </p>
+        <p style={{ marginTop: '1rem' }}>
+          Vascular ultrasound for GCA is not available at every medical center &mdash; it requires specially
+          trained sonographers. At the University of Washington, our sonographers have performed hundreds of
+          temporal artery ultrasounds since the program began in 2017.
+        </p>
+        <p style={{ marginTop: '1rem' }}>
+          Importantly, a vascular ultrasound that does not show inflammation does not completely rule out
+          GCA. Depending on your symptoms, your doctor may still recommend a temporal artery biopsy (a small
+          sample of the temple artery) to help confirm the diagnosis.
+        </p>
       </section>
 
       <section className="section">
