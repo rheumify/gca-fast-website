@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Cherry blossoms">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdeef3"/>
+      <stop offset="1" stop-color="#f7f9f8"/>
+    </linearGradient>
+    <g id="b">
+      <g fill="currentColor">
+        <ellipse cx="0" cy="-7.5" rx="4.3" ry="6.4"/>
+        <ellipse cx="0" cy="-7.5" rx="4.3" ry="6.4" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-7.5" rx="4.3" ry="6.4" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-7.5" rx="4.3" ry="6.4" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-7.5" rx="4.3" ry="6.4" transform="rotate(288)"/>
+      </g>
+      <circle r="2.2" fill="#e2a93f"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="240" fill="url(#sky)"/>
+
+  <path d="M-20,64 C180,116 340,40 560,84 C760,122 940,52 1140,98 C1340,138 1480,98 1620,126" fill="none" stroke="#6f4a39" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M-20,28 C220,18 360,62 600,40 C840,20 1020,62 1260,42 C1420,30 1520,52 1620,40" fill="none" stroke="#6f4a39" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <use href="#b" transform="translate(90,72) scale(1.4) rotate(10)" style="color:#f4b8cb"/>
+  <use href="#b" transform="translate(150,112) scale(1.0) rotate(40)" style="color:#ffffff"/>
+  <use href="#b" transform="translate(210,56) scale(1.2) rotate(-15)" style="color:#f9d4df"/>
+  <use href="#b" transform="translate(300,96) scale(1.5) rotate(25)" style="color:#f4b8cb"/>
+  <use href="#b" transform="translate(360,60) scale(0.95) rotate(60)" style="color:#ffffff"/>
+  <use href="#b" transform="translate(430,122) scale(1.1) rotate(-20)" style="color:#f9d4df"/>
+  <use href="#b" transform="translate(520,82) scale(1.4) rotate(15)" style="color:#f4b8cb"/>
+  <use href="#b" transform="translate(600,56) scale(1.0) rotate(35)" style="color:#ffffff"/>
+  <use href="#b" transform="translate(680,112) scale(1.25) rotate(-10)" style="color:#f9d4df"/>
+  <use href="#b" transform="translate(770,86) scale(1.5) rotate(20)" style="color:#f4b8cb"/>
+  <use href="#b" transform="translate(860,60) scale(1.0) rotate(50)" style="color:#ffffff"/>
+  <use href="#b" transform="translate(940,116) scale(1.15) rotate(-25)" style="color:#f9d4df"/>
+  <use href="#b" transform="translate(1030,82) scale(1.4) rotate(12)" style="color:#f4b8cb"/>
+  <use href="#b" transform="translate(1110,56) scale(1.0) rotate(38)" style="color:#ffffff"/>
+  <use href="#b" transform="translate(1200,112) scale(1.25) rotate(-15)" style="color:#f9d4df"/>
+  <use href="#b" transform="translate(1300,86) scale(1.5) rotate(22)" style="color:#f4b8cb"/>
+  <use href="#b" transform="translate(1380,60) scale(1.0) rotate(55)" style="color:#ffffff"/>
+  <use href="#b" transform="translate(1470,116) scale(1.2) rotate(-20)" style="color:#f9d4df"/>
+  <use href="#b" transform="translate(1550,82) scale(1.4) rotate(15)" style="color:#f4b8cb"/>
+
+  <g fill="#f4b8cb" opacity="0.7">
+    <ellipse cx="250" cy="180" rx="5" ry="3" transform="rotate(20 250 180)"/>
+    <ellipse cx="560" cy="200" rx="5" ry="3" transform="rotate(-25 560 200)"/>
+    <ellipse cx="880" cy="186" rx="5" ry="3" transform="rotate(15 880 186)"/>
+    <ellipse cx="1180" cy="205" rx="5" ry="3" transform="rotate(-18 1180 205)"/>
+    <ellipse cx="1420" cy="184" rx="5" ry="3" transform="rotate(22 1420 184)"/>
+  </g>
+</svg>
