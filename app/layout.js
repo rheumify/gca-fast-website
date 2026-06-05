@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
 
   const isActive = (path) => {
     if (path === '/') return pathname === '/';
-    return pathname.startsWith(path);
+    return pathname === path || pathname.startsWith(path + '/');
   };
 
   const close = () => setMenuOpen(false);
