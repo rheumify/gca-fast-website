@@ -61,6 +61,9 @@ export default function RootLayout({ children }) {
 
         <footer className="footer">
           <p>&copy; {new Date().getFullYear()} University of Washington Giant Cell Arteritis Fast Track Clinic. All Rights Reserved.</p>
+          <p className="footer-credit">
+            Banner photo: <a href="https://commons.wikimedia.org/wiki/File:UW_Cherry_Blossoms.jpg" target="_blank" rel="noopener noreferrer">&ldquo;UW Cherry Blossoms&rdquo;</a> by D. Guillaume, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons (cropped).
+          </p>
         </footer>
       </body>
     </html>
