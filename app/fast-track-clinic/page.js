@@ -40,6 +40,10 @@ export default function FastTrackClinic() {
             <strong>Please do not enter a request through the website.</strong>
           </p>
           <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>
+            <strong>Please have a direct call-back number ready</strong> when you page, so the on-call fellow can reach
+            you promptly.
+          </p>
+          <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>
             For patients with concern for visual changes, please send them to the emergency room for evaluation by
             ophthalmology and consideration of IV steroids. If local to the patient, Harborview ER is preferred due to
             ophthalmology access.
