@@ -58,7 +58,8 @@ export default function FAQs() {
             holidays. Vascular ultrasounds are primarily performed at the University of Washington in the{' '}
             <a href="https://www.uwmedicine.org/locations/vascular-laboratory-uwmc" target="_blank" rel="noopener noreferrer">vascular lab</a>.
             Results will be communicated directly to you. If you are not a rheumatologist, please call the operator at
-            206-744-3000 and ask for the rheumatology fellow on call for the Fast Track Clinic.
+            206-744-3000 and ask for the rheumatology fellow on call for the Fast Track Clinic. Please have a direct
+            call-back number ready so the on-call fellow can reach you promptly.
           </p>
         </div>
 
